@@ -1,1 +1,10 @@
-<p>bind-callback works!</p>
+<h1>bindCallback</h1>
+<p>
+  Essa função é um pocuo diferente dos operadores de criação, ao invés de
+  retornar um observable, ela retorna um operador de criação.
+</p>
+<p>
+  Ela recebe uma função em que seu último parâmetro é um callback, e retorna um
+  operador de criação removendo o ultimo parâmetro e passando o callback no
+  subscribe.
+</p>

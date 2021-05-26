@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { bindCallback, Subscription } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { bindCallback, Subscription } from 'rxjs';
   templateUrl: './bind-callback.component.html',
   styleUrls: ['./bind-callback.component.scss'],
 })
-export class BindCallbackComponent implements OnInit {
+export class BindCallbackComponent implements OnInit, OnDestroy {
   subscription?: Subscription;
 
   constructor() {}
@@ -14,9 +14,13 @@ export class BindCallbackComponent implements OnInit {
   ngOnInit(): void {
     const fn = bindCallback(this.fakeFnWithCallback);
 
-    fn('bindCallback :)').subscribe((value) => {
+    this.subscription = fn('bindCallback :)').subscribe((value) => {
       console.log(value);
     });
+  }
+
+  ngOnDestroy(): void {
+    this.subscription?.unsubscribe();
   }
 
   private fakeFnWithCallback<T>(value: T, cb: (param: T) => any): any {
