@@ -1,0 +1,17 @@
+<h1>defer</h1>
+<p>
+  Essa função criadora recebe uma função como argumento. Essa função deve
+  retornar um observável.
+</p>
+<p>
+  Ele cria o observable de forma lazy, ou seja, somente vai instanciar o
+  observable quando houver um inscrito.
+</p>
+<p>
+  Pode até parecer que os inscritos estão se inscrevendo no mesmo observable,
+  mas na verdade, cada um dos inscritos tem sua própria instancia de observable.
+</p>
+<p>
+  Podemos simular este mesmo funcionamento criando uma função que retorna um
+  novo observable.
+</p>
