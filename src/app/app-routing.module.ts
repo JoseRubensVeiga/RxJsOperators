@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AnimationFramesComponent } from './pages/animation-frames';
+import { BindCallbackComponent } from './pages/bind-callback';
 
 const routes: Routes = [
-  { path: 'animation-frames', component: AnimationFramesComponent },
+  { path: 'bind-callback', component: BindCallbackComponent },
 ];
 
 @NgModule({

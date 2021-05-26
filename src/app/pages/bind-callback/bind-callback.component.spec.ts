@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AnimationFramesComponent } from './animation-frames.component';
+import { BindCallbackComponent } from './bind-callback.component';
 
-describe('AnimationFramesComponent', () => {
-  let component: AnimationFramesComponent;
-  let fixture: ComponentFixture<AnimationFramesComponent>;
+describe('BindCallbackComponent', () => {
+  let component: BindCallbackComponent;
+  let fixture: ComponentFixture<BindCallbackComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AnimationFramesComponent ]
+      declarations: [ BindCallbackComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AnimationFramesComponent);
+    fixture = TestBed.createComponent(BindCallbackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

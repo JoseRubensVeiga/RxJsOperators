@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AnimationFramesComponent } from './animation-frames';
+import { BindCallbackComponent } from './bind-callback/bind-callback.component';
 
 @NgModule({
-  declarations: [AnimationFramesComponent],
   imports: [CommonModule],
+  declarations: [BindCallbackComponent],
 })
 export class PagesModule {}
