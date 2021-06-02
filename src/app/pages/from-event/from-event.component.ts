@@ -22,7 +22,7 @@ export class FromEventComponent implements AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     const element = this.myButton?.nativeElement as HTMLElement;
 
-    const clickEvent = fromEvent(element, 'click');
+    const clickEvent = fromEvent(element, 'click').pipe(take(2));
 
     this.subscription = clickEvent.subscribe({
       next: console.log,

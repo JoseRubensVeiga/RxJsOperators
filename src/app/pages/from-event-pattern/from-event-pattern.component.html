@@ -1,0 +1,20 @@
+<h1>fromEventPattern</h1>
+<p>
+  Essa função criadora é muito parecida com o fromEvent, porém mais detalhada.
+</p>
+<p>
+  Nela podemos interceptar as funções de attaching e detaching, com isso,
+  conseguimos manipular um evento paralelo para acontecer nestes momentos
+  específicos.
+</p>
+<p>
+  A função de attaching vai ser chamada sempre que houver uma inscrição e a de
+  detaching vai ser chamada sempre que houver uma desinscrição.
+</p>
+<p>
+  Neste exemplo a inscrição começa quando a view é carregada. E a desinscrição é
+  efetuada quando a view é destruída usando o método unsubscribe. Usando pipes
+  limitadores como o take podemos ter o mesmo efeito
+</p>
+
+<button #myButton>Emitir evento</button>
