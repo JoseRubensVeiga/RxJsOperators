@@ -7,7 +7,10 @@ import { from, Observable, of, Subscriber, Subscription } from 'rxjs';
   styleUrls: ['./from.component.scss'],
 })
 export class FromComponent implements OnInit, OnDestroy {
-  subscription?: Subscription;
+  promiseStringSub?: Subscription;
+  arrayStringSub?: Subscription;
+  observableStringSub?: Subscription;
+  generatorStringSub?: Subscription;
 
   constructor() {}
 
@@ -24,7 +27,10 @@ export class FromComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.subscription?.unsubscribe();
+    this.promiseStringSub?.unsubscribe();
+    this.arrayStringSub?.unsubscribe();
+    this.observableStringSub?.unsubscribe();
+    this.generatorStringSub?.unsubscribe();
   }
 
   private async promiseString(): Promise<string> {

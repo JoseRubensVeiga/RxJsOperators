@@ -7,6 +7,7 @@ import { ConcatComponent } from './pages/concat';
 import { DeferComponent } from './pages/defer';
 import { ForkJoinComponent } from './pages/fork-join';
 import { FromComponent } from './pages/from';
+import { FromEventComponent } from './pages/from-event';
 
 const routes: Routes = [
   { path: 'bind-callback', component: BindCallbackComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'defer', component: DeferComponent },
   { path: 'fork-join', component: ForkJoinComponent },
   { path: 'from', component: FromComponent },
+  { path: 'from-event', component: FromEventComponent },
 ];
 
 @NgModule({

@@ -7,6 +7,7 @@ import { ConcatComponent } from './concat';
 import { DeferComponent } from './defer';
 import { ForkJoinComponent } from './fork-join';
 import { FromComponent } from './from';
+import { FromEventComponent } from './from-event';
 
 @NgModule({
   imports: [CommonModule],
@@ -18,6 +19,7 @@ import { FromComponent } from './from';
     DeferComponent,
     ForkJoinComponent,
     FromComponent,
+    FromEventComponent,
   ],
 })
 export class PagesModule {}
