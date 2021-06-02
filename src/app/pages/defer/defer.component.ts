@@ -20,11 +20,9 @@ export class DeferComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit(): void {
-    const clicksOrInterval = defer(() => {
-      return Math.random() > 0.5
-        ? fromEvent(document, 'click')
-        : interval(1000);
-    });
+    const clicksOrInterval = defer(() =>
+      Math.random() > 0.5 ? fromEvent(document, 'click') : interval(1000)
+    );
     clicksOrInterval.subscribe((x) => console.log('1', x));
     clicksOrInterval.subscribe((x) => console.log('2', x));
     clicksOrInterval.subscribe((x) => console.log('3', x));

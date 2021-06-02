@@ -5,6 +5,7 @@ import { BindNodeCallbackComponent } from './bind-node-callback';
 import { CombineLatestComponent } from './combine-latest';
 import { ConcatComponent } from './concat';
 import { DeferComponent } from './defer';
+import { ForkJoinComponent } from './fork-join';
 
 @NgModule({
   imports: [CommonModule],
@@ -14,6 +15,7 @@ import { DeferComponent } from './defer';
     CombineLatestComponent,
     ConcatComponent,
     DeferComponent,
+    ForkJoinComponent,
   ],
 })
 export class PagesModule {}

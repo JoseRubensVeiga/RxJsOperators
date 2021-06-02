@@ -5,6 +5,7 @@ import { BindNodeCallbackComponent } from './pages/bind-node-callback';
 import { CombineLatestComponent } from './pages/combine-latest';
 import { ConcatComponent } from './pages/concat';
 import { DeferComponent } from './pages/defer';
+import { ForkJoinComponent } from './pages/fork-join';
 
 const routes: Routes = [
   { path: 'bind-callback', component: BindCallbackComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'combine-latest', component: CombineLatestComponent },
   { path: 'concat', component: ConcatComponent },
   { path: 'defer', component: DeferComponent },
+  { path: 'fork-join', component: ForkJoinComponent },
 ];
 
 @NgModule({

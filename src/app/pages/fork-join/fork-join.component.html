@@ -1,0 +1,14 @@
+<h1>forkJoin</h1>
+<p>
+  Essa função criadora recebe um objeto ou um array como parâmetro. O tipo do
+  parâmetro vai definir o tipo de valor emitido.
+</p>
+<p>
+  Após registrar o forkJoin, ele retorna um observable que, só emite o último
+  valor de cada observable passado como parâmetro, uma vez, quando todos
+  estiverem completos.
+</p>
+<p>
+  Apenar chamar ele com Subjects não é suficiente. Precisa completar o Subject
+  para que o forkJoin emita o evento.
+</p>
