@@ -9,6 +9,7 @@ import { ForkJoinComponent } from './fork-join';
 import { FromComponent } from './from';
 import { FromEventComponent } from './from-event';
 import { FromEventPatternComponent } from './from-event-pattern/from-event-pattern.component';
+import { GenerateComponent } from './generate';
 
 @NgModule({
   imports: [CommonModule],
@@ -22,6 +23,7 @@ import { FromEventPatternComponent } from './from-event-pattern/from-event-patte
     FromComponent,
     FromEventComponent,
     FromEventPatternComponent,
+    GenerateComponent,
   ],
 })
 export class PagesModule {}

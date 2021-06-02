@@ -9,6 +9,7 @@ import { ForkJoinComponent } from './pages/fork-join';
 import { FromComponent } from './pages/from';
 import { FromEventComponent } from './pages/from-event';
 import { FromEventPatternComponent } from './pages/from-event-pattern';
+import { GenerateComponent } from './pages/generate';
 
 const routes: Routes = [
   { path: 'bind-callback', component: BindCallbackComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'from', component: FromComponent },
   { path: 'from-event', component: FromEventComponent },
   { path: 'from-event-pattern', component: FromEventPatternComponent },
+  { path: 'generate', component: GenerateComponent },
 ];
 
 @NgModule({
